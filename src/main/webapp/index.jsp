@@ -2,6 +2,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <%@ include file="head.jsp"%>
+    <%@ include file="footer.jsp"%>
     <title><%= "some title" %></title>
 </head>
 <body>
