@@ -2,16 +2,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <%@ include file="head.jsp"%>
-    <%@ include file="footer.jsp"%>
-    <title><%= "some title" %></title>
+    <%@ include file="partials/head.jsp"%>
+    <title><%= "Web Page" %></title>
 </head>
 <body>
-    <c:if test="true">
-        <h1>Variable names should be very descriptive</h1>
-    </c:if>
-    <c:if test="false">
-        <h1>single letter variable names are good</h1>
-    </c:if>
+<%@include file="partials/navbar.jsp"%>
+<div class="card-panel green accent-1">
+ <h1 class="yellow-text accent-3">Welcome to my website!</h1>
+</div>
+
+<%@ include file="partials/footer.jsp"%>
 </body>
 </html>

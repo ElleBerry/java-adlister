@@ -9,11 +9,18 @@
 <html>
 <head>
     <title>Title</title>
-    <%@ include file="head.jsp"%>
-    <%@ include file="footer.jsp"%>
+    <%@ include file="partials/head.jsp"%>
 </head>
 <body>
- <h1>Hello Admin!</h1>
+<%@include file="partials/navbar.jsp"%>
 
+ <c:if test="true">
+     <h1>Hello Admin!</h1>
+ </c:if>
+ <c:if test="false">
+     <h1>Sorry, you are not an admin!</h1>
+ </c:if>
+
+<%@ include file="partials/footer.jsp"%>
 </body>
 </html>
