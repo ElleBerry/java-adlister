@@ -39,4 +39,8 @@ public class ListAdsDao implements Ads {
         ));
         return ads;
     }
+
+//    public Ad findById(long id){
+//        return ads.get((int)id-1);
+//    }
 }
